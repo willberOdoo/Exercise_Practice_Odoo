@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Training',
+    'name': 'Odoo Training',
 
-    'summary': """Training technic""",
+    'summary': """Training technique""",
 
     'description': """ 
         exercise practice odoo
@@ -16,9 +16,16 @@
     'category': 'Training',
     'version': '1.0.1',
 
-    'depends': [],
+    'depends': ['mail', 'hr'],
 
-    'data': [],
+    'data': [
+        'views/menu_view.xml',
+        'views/libros_view.xml',
+        'security/libreria_security.xml',
+        'security/ir.model.access.csv',
+        'views/hr_employee_view.xml',
+
+    ],
 
     'demo': [],
 }
